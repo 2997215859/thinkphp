@@ -1,0 +1,2 @@
+[ 2016-03-08T19:37:30+08:00 ] ERR: (ThinkException) Model:sava您所请求的方法不存在！
+[ 2016-03-08T20:17:37+08:00 ] ERR: (ThinkException) 模板不存在[./Home/Tpl/User/update.html]

@@ -1,0 +1,56 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>modify</title>
+	<script type="text/javascript">
+		window.onload = function function_name(argument) {
+			// body...
+			//alert((<?php echo ($data[sex]); ?>).toSource());
+			//alert("<?php echo ($sx); ?>");
+			if (<?php echo ($data['sex']); ?> == 1) {
+				//document.sex[0].checked = true;
+				//alert("mam");
+				document.getElementsByName('sex')[0].checked='checked';
+ 			}else {
+				//document.sex[1].checked = true;	
+				document.getElementsByName('sex')[1].checked='checked';			
+			}
+
+			//alert("<?php echo ($data[sex]); ?>");
+		}
+	</script>
+</head>
+
+<body>
+	<form action="/thinkphp/index.php/User/update" method="post">
+	<table border="1px">
+		<tr>
+			<th>id</th>
+			<th>
+				<input name="id" type="text" value="<?php echo ($data[id]); ?>"></input>
+			</th>
+		</tr>
+		<tr>
+			<th>username</th>
+			<th>
+				<input name="username" type="text" value="<?php echo ($data[username]); ?>"></input>
+			</th>
+		</tr>
+		<tr>
+			<th>sex</th>
+			<th>
+				<input type="radio" name="sex" value="1">男
+				<input type="radio" name="sex" value="0">女
+			</th>
+		</tr>
+		<tr>
+			<th colspan="2">
+				<input type="submit" value="提交"></input>
+			</th>
+			
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
