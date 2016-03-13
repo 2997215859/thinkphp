@@ -1,0 +1,3 @@
+# thinkphp
+thinkphp的学习和项目
+该repository主要用于学习thinkphp的框架
